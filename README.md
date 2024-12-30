@@ -26,3 +26,12 @@ To run the python code, run python practice_heuristic.py in the proper directory
 
 *Manhatten Distance*
 - The manhatten distance is the distance between two points in a grid, which is relevant for this problem because the only possible movements are up, down, left, and right. Diagonal moves are not allowed. The determined Manhatten distance will always assume an open path from the red car to the end state and won't account for other vehicles blocking the red car's path. Thus, the manhatten distance is always the minimum amount of moves to get the red car from the its initial state to its final state; therefore guarenteeing the heuristic will be admissible.
+
+*Traffic Jam*
+- This heuristic calculates how far one vehicle in front of the red car needs to be moved to free the space for the red car (when there is a vehicle there) and adds this distance to the manhatten distance of the red car to the end state. This calculation is always the minimum amount of moves required when there is one vehicle in the red car's way, so the heuristic is always admissible.
+
+*Move the Obstacle*
+- Similarly to traffic jam it calculates moving a vehicle in front of the red car, but can also move a vehicle blocking that first obstacle vehicle.
+
+*Line*
+- This calculates how many moves it takes to clear an entire line of obstacles depending on how many are present. When there is an obstacle it recursively centers at that obstacle and attempts to move it, if it can move to an open space then it moves the obstacle, but if it is also blocked it makes another recursive call and continues to do so until an open space is found or the end of the board is reached. For vehicles in the vertical direction it just assumes it must be moved one tile, but for horizontal vehicles it can determine the exact amount it must move.
