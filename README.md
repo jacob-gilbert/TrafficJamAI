@@ -24,3 +24,5 @@ To run the python code, run python practice_heuristic.py in the proper directory
 
 ## Heuristic Explanation
 
+*Manhatten Distance*
+- The manhatten distance is the distance between two points in a grid, which is relevant for this problem because the only possible movements are up, down, left, and right. Diagonal moves are not allowed. The determined Manhatten distance will always assume an open path from the red car to the end state and won't account for other vehicles blocking the red car's path. Thus, the manhatten distance is always the minimum amount of moves to get the red car from the its initial state to its final state; therefore guarenteeing the heuristic will be admissible.
