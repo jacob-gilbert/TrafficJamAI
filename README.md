@@ -1,11 +1,8 @@
 # README
 
-The code is written in python. Download the folder. The heuristics have been imported into test_heuristic.py.
-The three example intitial states are in the test_heuristic.py file to show the expected input for an initial
-state along with the attributes that need to be used with them, such as the number of rows, n, the number of
-columns m, and the goal state location.
+The code is written in python. Download the folder. The heuristics have been imported into practice_heuristic.py. The three example intitial states are in the practice_heuristic.py file to show the expected input for an initial state along with the attributes that need to be used with them, such as the number of rows, n, the number of columns m, and the goal state location.
 
-To run the python code, run python test_heuristic.py in the proper directory.
+To run the python code, run python practice_heuristic.py in the proper directory.
 
 ## Format for the initial state:
 - 2d matrix
@@ -22,3 +19,5 @@ To run the python code, run python test_heuristic.py in the proper directory.
 - Outputs total states explored/goal tested by Manhattan Heuristic and Move The Obstacle Heuristic
 - Outputs total solution cost that both heuristics find
 - The Move the Obstacle Heuristic also outputs the path from the initial state to the goal state
+
+## Heuristic Explanation
