@@ -5,6 +5,7 @@ The code is written in python. Download the folder. The heuristics have been imp
 To run the python code, run python practice_heuristic.py in the proper directory.
 
 ## Format for the initial state:
+
 - 2d matrix
 - empty cells have a 0
 - cells with a vehicle have a tuple
@@ -16,8 +17,10 @@ To run the python code, run python practice_heuristic.py in the proper directory
 - Example row [0,&emsp;0,&emsp;(1, “c”, “h”),&emsp;(1, “c”, “h”),&emsp;0]
 
 ## Output
+
 - Outputs total states explored/goal tested by Manhattan Heuristic and Move The Obstacle Heuristic
 - Outputs total solution cost that both heuristics find
 - The Move the Obstacle Heuristic also outputs the path from the initial state to the goal state
 
 ## Heuristic Explanation
+
