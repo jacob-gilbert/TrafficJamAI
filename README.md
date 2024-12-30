@@ -1,6 +1,5 @@
 # README
 
-
 The code is written in python. Download the folder. The heuristics have been imported into test_heuristic.py.
 The three example intitial states are in the test_heuristic.py file to show the expected input for an initial
 state along with the attributes that need to be used with them, such as the number of rows, n, the number of
